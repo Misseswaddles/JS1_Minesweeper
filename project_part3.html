@@ -10,32 +10,46 @@
 		// **    Description: Minesweeper Project 
 		// **    
 		// **********************************************
-		// **       Change Log 
+		// **       Change Log
+	   	// **	  10/24/17-  Edited out "location" variables and print of such. Added, new prompt and for loop to handle 
+		// **	             variable width, added in checks to ensure user entered a name, and width within specifications. Added
+		// **		     remaining specifications for homework 3. Carol Farris
 		// **     10/18/17 - Added 5 locations and if 5 entered, displays 00000. Joanna Rooney
 		// **     10/15/17 – Added user name prompt and welcome alert. Jesse Fuchs
 		// **     10/9/17 – Added header and changelog. Cliff Knopik
 		// **********************************************
 
 		// Prompt user for name
-		var name = prompt('Please enter your name:');
+		var name = prompt("Please enter your name:");
+	   
+	   	//Make sure user added something for name request, If empty, use "Anonymous",
+		if (name == ""){
+  		name = "Anonymous";
+  		alert("Looks like we are going anonymous today, eh? You will henceforth be referred to as " + name);
+		}
 
 		// Output welcome alert message with the users name
-		alert('Welcome to the Minesweeper game ' + name + '!');
+		alert("Welcome to the Minesweeper game " + name + "!");
 
-
+                /* The following code was commented out and replaced below.
 		// Output how many locations game should have as well as individual locations
 		var locations = prompt('How many locations should minefield have, minimum of 5?');
-		var locationOne = "0";
+                var locationOne = "0";
 		var locationTwo = "0";
 		var locationThree = "0";
 		var locationFour = "0";
 		var locationFive = "0";
-	
 		// create loop to display "0" in each location, if user inputs 5.
 			if (locations == 5){
 				console.log(locationOne + locationTwo + locationThree + locationFour + locationFive)
 			};
-	
+	         */ //Code removed as it fails to meet specification of previous assignment. Replacement below.
+	   
+                //prompt user to add the numeric width of the battlefield with a minimum of 5 units. 	   
+	   	var declareWidth = prompt("Provide the numeric width of the battlefield. It must be a minimum width of 5.");
+	        
+	        //
+	   
 	</script>
 </body>
 </html>
