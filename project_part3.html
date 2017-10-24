@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Minesweeper Project</title>
+   <script>
+		// *********************************************
+		// **    Code Author:   Jesse Fuchs
+		// **    Date: 10/15/2017                        
+		// **    Description: Minesweeper Project 
+		// **    
+		// **********************************************
+		// **       Change Log 
+		// **     10/18/17 - Added 5 locations and if 5 entered, displays 00000. Joanna Rooney
+		// **     10/15/17 – Added user name prompt and welcome alert. Jesse Fuchs
+		// **     10/9/17 – Added header and changelog. Cliff Knopik
+		// **********************************************
+
+		// Prompt user for name
+		var name = prompt('Please enter your name:');
+
+		// Output welcome alert message with the users name
+		alert('Welcome to the Minesweeper game ' + name + '!');
+
+
+		// Output how many locations game should have as well as individual locations
+		var locations = prompt('How many locations should minefield have, minimum of 5?');
+		var locationOne = "0";
+		var locationTwo = "0";
+		var locationThree = "0";
+		var locationFour = "0";
+		var locationFive = "0";
+	
+		// create loop to display "0" in each location, if user inputs 5.
+			if (locations == 5){
+				console.log(locationOne + locationTwo + locationThree + locationFour + locationFive)
+			};
+	
+	</script>
+</body>
+</html>
